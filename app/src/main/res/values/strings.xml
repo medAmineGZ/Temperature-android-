@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tempamine</string>
+    <string name="give_me_tempeture_in_c">give_me_tempeture_in_c</string>
+    <string name="give_the_temperature_in_f">give_the_temperature_in_f</string>
+    <string name="convert">convert</string>
+    <string name="todo">todo</string>
+    <string name="give_me_temperature_in_c">give me temperature in C</string>
+    <string name="reset">Reset</string>
+</resources>

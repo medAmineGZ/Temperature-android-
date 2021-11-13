@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/textinc"
+
+        android:digits="0123456789."
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/give_me_temperature_in_c"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/textinf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:hint="@string/give_the_temperature_in_f"
+        android:inputType="numberDecimal|numberSigned"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="convert"
+        android:text="@string/convert"
+
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="167dp"
+        android:layout_height="71dp"
+        android:onClick="reset"
+        android:text="@string/reset"
+
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="454dp"
+        android:layout_height="589dp"
+        android:background="@drawable/temp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/temp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+</LinearLayout>
